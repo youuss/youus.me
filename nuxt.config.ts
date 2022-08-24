@@ -7,5 +7,6 @@ export default defineNuxtConfig({
       'composables/**',
       'utils/**'
     ]
-  }
+  },
+  modules: ['./modules/markdown']
 })
