@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    container
+    main
   </main>
 </template>
 <style lang="scss" scoped>

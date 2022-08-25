@@ -5,7 +5,7 @@
       <NuxtLink to="/">Hmoe</NuxtLink>
       <NuxtLink to="/blog">Blog</NuxtLink>
       <NuxtLink to="/projects">Projects</NuxtLink>
-      <a href="https://shuimo.janghood.com/" target="_blank">Janghood-ui</a>
+      <NuxtLink to="/janghood">Janghood</NuxtLink>
     </nav>
   </header>
 </template>

@@ -8,5 +8,11 @@ export default defineNuxtConfig({
       'utils/**'
     ]
   },
+  css: [
+    '@/assets/var.css',
+    '@/assets/common.scss',
+    '@/assets/animation.scss'
+  ],
+  extensions: ['.md'],
   modules: ['./modules/markdown']
 })

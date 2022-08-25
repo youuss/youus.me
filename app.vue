@@ -3,6 +3,7 @@
     <NavBar />
     <NuxtPage />
     <Plum />
+    <Security/>
   </div>
 </template>
 <script setup>
