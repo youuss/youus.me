@@ -72,7 +72,7 @@ onMounted(() => {
     position: absolute;
     right: 0;
     left: 0;
-    animation-name: likes; // 动画名称
+    animation-name: heart-beat; // 动画名称
     animation-direction: alternate; // 动画在奇数次（1、3、5...）正向播放，在偶数次（2、4、6...）反向播放。
     animation-timing-function: linear; // 动画执行方式，linear：匀速；ease：先慢再快后慢；ease-in：由慢速开始；ease-out：由慢速结束；ease-in-out：由慢速开始和结束；
     animation-delay: 0s; // 动画延迟时间

@@ -2,7 +2,7 @@
   <header class="header">
     <div class="sign">youus</div>
     <nav class="nav">
-      <NuxtLink to="/">Hmoe</NuxtLink>
+      <NuxtLink to="/">Home</NuxtLink>
       <NuxtLink to="/blog">Blog</NuxtLink>
       <NuxtLink to="/projects">Projects</NuxtLink>
       <NuxtLink to="/janghood">Janghood</NuxtLink>
