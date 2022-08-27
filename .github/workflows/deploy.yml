@@ -22,7 +22,7 @@ jobs:
       # 打包构建
       - name: Build
         uses: actions/setup-node@master
-      - run: pnpm install
+      - run: pnpm install --shamefully-hoist
       - run: pnpm run build
       - run: tar -zcvf youus-blog.zip .output
 
