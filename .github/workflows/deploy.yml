@@ -13,7 +13,7 @@ jobs:
       - name: prepare pnpm
         uses: pnpm/action-setup@v2.1.0
         with:
-          version: 6.0.2
+          version: 7.9.3
 
       # 下载源码
       - name: Checkout
@@ -30,7 +30,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: youus.zip
+          files: youus-blog.zip
           token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
 
       # 传到服务器
