@@ -1,3 +1,7 @@
 :root {
-  --font-size-nav: 18px
+  --font-size-nav: 18px;
+  --main-container-padding: 2rem;
+  --q-bg: #fff;
+  --q-scrollbar: #eee;
+  --q-scrollbar-hover: #bbb;
 }

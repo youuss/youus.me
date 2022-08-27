@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    main
+    还在努力中...
   </main>
 </template>
 <style lang="scss" scoped>

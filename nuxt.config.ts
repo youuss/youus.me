@@ -11,7 +11,9 @@ export default defineNuxtConfig({
   css: [
     '@/assets/var.css',
     '@/assets/common.scss',
-    '@/assets/animation.scss'
+    '@/assets/animation.scss',
+    '@/assets/janghood.scss',
+    '@/assets/components.scss'
   ],
   extensions: ['.md'],
   modules: ['./modules/markdown']

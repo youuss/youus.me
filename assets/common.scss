@@ -29,13 +29,6 @@ body {
 a {
   text-decoration: none;
   color: #000;
-  opacity: 0.5;
-  font-size: var(--font-size-nav);
-  transition: border .3s ease-in-out;
-
-  &:hover {
-    opacity: 0.8;
-  }
 }
 
 [title=hiyouus] {
@@ -45,4 +38,27 @@ a {
   width: 100%;
   text-align: center;
   padding: 5px 0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
+  background: var(--q-bg);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--q-scrollbar);
+  border-radius: 10px;
+
+  &:hover {
+    background: var(--q-scrollbar-hover);
+  }
+}
+
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
+  background: var(--q-bg);
+  border-radius: 10px;
 }
