@@ -16,5 +16,5 @@ export default defineNuxtConfig({
     '@/assets/components.scss'
   ],
   extensions: ['.md'],
-  modules: ['./modules/markdown']
+  modules: ['./modules/markdown', '@unocss/nuxt']
 })

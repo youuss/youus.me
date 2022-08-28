@@ -32,3 +32,25 @@
     }
   }
 }
+
+// ListProjects
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+  a.item {
+    transition: .2s all ease-out;
+    padding: 0.8em 1em;
+    background: transparent;
+    font-size: 1.1rem;
+    cursor: pointer;
+    &:hover {
+      background: #88888810;
+    }
+
+    .icon {
+      width: 2rem;
+      height: 2rem
+    }
+  }
+}

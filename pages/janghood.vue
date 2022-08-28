@@ -1,7 +1,7 @@
 <template>
   <div class="janghood">
     <a href="https://shuimo.janghood.com/" target="_blank">
-      <img class="logo" alt="" src="/svg/logo.svg" />
+      <img class="janghood-logo" alt="" src="/svg/janghood.svg" />
       <div class="talkings">
         <div>
           <div ref="talkingZhRef" class="janghood-talking">
