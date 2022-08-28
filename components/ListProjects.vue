@@ -25,7 +25,7 @@ defineProps<{ projects: Record<string, Project> }>();
   <template v-for="key in Object.keys(projects)" :key="key">
     <h4>{{ key }}</h4>
     <div class="project-grid py-2 -mx-3 gap-2">
-      <a v-for="item in projects[key].items" class="item relative flex items-center">
+      <a v-for="item in projects[key].items" class="item relative flex items-center" target="_blank" :href="item.github">
         <div class="pt-2 pr-5">
           <IconsJangHoodIcon v-if="item.icon === 'Janghood'" class="text-4xl opacity-50" />
           <IconsYouusIcon v-else-if="item.icon === 'Youus'" class="text-4xl opacity-50" />
