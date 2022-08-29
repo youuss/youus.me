@@ -43,8 +43,9 @@ a {
   max-width: 65ch;
   font-size: 1rem;
   line-height: 1.75;
+  color: var(--q);
   h1 {
-    color: var(--fg-deeper);
+    color: var(--q-deeper);
     font-weight: 800;
     font-size: 2.25em;
     margin-top: 0;
