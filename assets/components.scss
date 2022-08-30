@@ -4,7 +4,7 @@
 
   .sign {
     padding: var(--main-container-padding);
-    font-family: fantasy;
+    font-family: Papyrus, Herculanum, Party LET, Curlz MT, Harrington, fantasy, "Gill Sans", sans-serif;
     font-size: var(--font-size-nav);
     font-weight: 600;
     letter-spacing: 3px;
@@ -13,7 +13,7 @@
   .nav {
     grid-column: -1 span;
     padding: var(--main-container-padding);
-    font-family: sans-serif;
+    font-family: "Gill Sans", sans-serif;
   
     a {
       margin: 0 10px;
