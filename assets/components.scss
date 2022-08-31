@@ -13,7 +13,7 @@
   .nav {
     grid-column: -1 span;
     padding: var(--main-container-padding);
-    font-family: youus, "Gill Sans", sans-serif;
+    font-family: var(--q-font-family);
   
     a {
       margin: 0 10px;
