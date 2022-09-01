@@ -9,7 +9,10 @@ export default async () => {
     exclude: [/\.vue$/]
   }));
   addVitePlugin(Doc({
-    wrapperClasses: 'youus m-auto',
+    headEnabled: true,
+    markdownItOptions: {
+      quotes: '""\'\'',
+    },
     markdownItSetup(MarkdownIt) {
       MarkdownIt.use(Shiki, {
         theme: {

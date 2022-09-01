@@ -150,3 +150,11 @@ a {
 .youus blockquote p:first-of-type::after {
   content: none;
 }
+
+html:not(.dark) .shiki-dark {
+  display: none;
+}
+
+html.dark .shiki-light {
+  display: none;
+}

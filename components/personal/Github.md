@@ -3,6 +3,6 @@
 > 123
 
 
-```javascript
+```js
 const a = 1;
 ```

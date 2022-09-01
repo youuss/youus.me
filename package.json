@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@unocss/nuxt": "^0.45.13",
+    "dayjs": "^1.11.5",
     "markdown-it-shiki": "^0.5.1",
     "nuxt": "3.0.0-rc.8",
     "sass": "^1.54.5",

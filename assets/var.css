@@ -4,8 +4,20 @@
   --q-bg: #fff;
   --q-scrollbar: #eee;
   --q-scrollbar-hover: #bbb;
-  --q-deeper: #000;
-  --q-deep: #222;
-  --q: #555;
   --q-font-family: youus, "Gill Sans", sans-serif;
+}
+
+
+html.dark .youus {
+  --q: #bbb;
+  --q-deep: #ddd;
+  --q-deeper: #fff;
+}
+
+.youus {
+  --q: #555;
+  --q-deep: #222;
+  --q-deeper: #000;
+
+  color: var(--q);
 }
