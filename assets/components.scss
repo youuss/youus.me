@@ -14,6 +14,8 @@
     grid-column: -1 span;
     padding: var(--main-container-padding);
     font-family: var(--q-font-family);
+    display: flex;
+    align-items: center;
   
     a {
       margin: 0 10px;

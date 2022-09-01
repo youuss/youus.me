@@ -4,12 +4,11 @@
       <h1>youus</h1>
     </div>
     <article>
-      <div class="youus m-auto">
-        <PersonalEducation />
-        <PersonalSkill />
-        <PersonalJobs />
-        <PersonalProjects />
-      </div>
+      <PersonalEducation />
+      <PersonalSkill />
+      <PersonalJobs />
+      <PersonalProjects />
+      <PersonalGithub />
     </article>
   </main>
 </template>
