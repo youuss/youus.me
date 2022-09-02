@@ -23,16 +23,19 @@ const talkingEnRef = ref<HTMLElement>(null);
 const talkingZh = "我们是一个神秘的江湖组织。";
 const talkingEn = "We are a mysterious Janghood organization.";
 
+let zhTimer: NodeJS.Timeout | null = null;
+let enTimer: NodeJS.Timeout | null = null;
+
 function toSpell() {
   let zhCount = 0;
-  let zhTimer: NodeJS.Timeout | null = null;
+  
   let enCount = 0;
-  let enTimer: NodeJS.Timeout | null = null;
+  
 
   zhTimer = setInterval(() => {
     talkingZhRef.value.append(talkingZh.charAt(zhCount));
     if (zhCount++ === talkingZh.length) {
-      clearInterval(zhTimer);
+      clearInterval(enTimer);
       setTimeout(() => {
         talkingZhRef.value.removeChild(talkingZhRef.value.firstChild);
       }, 2000);
@@ -53,4 +56,9 @@ function toSpell() {
 onMounted(() => {
   toSpell();
 });
+
+onBeforeUnmount(() => {
+  clearInterval(zhTimer);
+  clearInterval(enTimer);
+})
 </script>

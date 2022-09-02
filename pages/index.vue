@@ -1,10 +1,10 @@
 <template>
-  <main class="main">
+  <main>
     <div class="youus m-auto mb-8">
       <h1>youus</h1>
     </div>
     <article>
-      <div class="youus m-auto">
+      <div class="youus m-auto mb-10">
         <PersonalEducation />
         <PersonalSkill />
         <PersonalJobs />
@@ -14,8 +14,4 @@
     </article>
   </main>
 </template>
-<style lang="scss" scoped>
-.main {
-  padding: 2rem;
-}
-</style>
+

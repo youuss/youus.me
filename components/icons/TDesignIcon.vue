@@ -4,6 +4,7 @@
     height="1em"
     viewBox="0 0 26 26"
     fill="none"
+    class="icon"
     xmlns="http://www.w3.org/2000/svg"
   >
     <g clip-path="url(#clip0_13192:18903)">

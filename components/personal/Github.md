@@ -1,8 +1,5 @@
 ## ✨ Github
 
-> 123
-
-
 ```js
-const a = 1;
+console.log('coding...')
 ```

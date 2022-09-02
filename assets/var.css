@@ -21,3 +21,9 @@ html.dark .youus {
 
   color: var(--q);
 }
+
+html.dark {
+  --q-bg: #050505;
+  --q-scrollbar: #111;
+  --q-scrollbar-hover: #222;
+}

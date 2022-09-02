@@ -13,7 +13,8 @@ export default defineNuxtConfig({
     '@/assets/common.scss',
     '@/assets/animation.scss',
     '@/assets/janghood.scss',
-    '@/assets/components.scss'
+    '@/assets/youus.scss',
+    '@/assets/markdown.scss'
   ],
   extensions: ['.md'],
   modules: ['./modules/markdown', '@unocss/nuxt']
