@@ -61,7 +61,7 @@
 }
 .youus ul > li {
   position: relative;
-  padding-left: 1.75em;
+  padding-left: 1.25em;
 }
 .youus ul > li::before {
   content: "";
@@ -98,7 +98,7 @@
 .youus h1 {
   color: var(--q-deeper);
   font-weight: 800;
-  font-size: 2.25em;
+  font-size: 2.75em;
   margin-top: 0;
   margin-bottom: 0.8888889em;
   line-height: 1.1111111;
@@ -246,6 +246,7 @@
   margin-top: 1.25em;
   margin-bottom: 1.25em;
   list-style-type: none;
+  padding-inline-start: 1em;
 }
 .youus li {
   margin-top: 0.5em;
