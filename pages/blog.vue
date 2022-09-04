@@ -1,8 +1,10 @@
 <template>
-  <div></div>
+  <div>
+    <div @click="test">test</div>
+  </div>
 </template>
 
-<script>
+<script setup>
 /**
  * @Description
  * @Author youus
@@ -11,9 +13,9 @@
  *
  * Hello, humor
  */
-export default {
-  name: "blog"
-}
+
+import useYuQueMeta from '@/composables/useYuQueMeta';
+const { test } = useYuQueMeta();
 </script>
 
 <style scoped>
