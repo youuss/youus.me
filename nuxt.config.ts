@@ -1,4 +1,5 @@
 import { defineNuxtConfig } from 'nuxt'
+import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -17,5 +18,20 @@ export default defineNuxtConfig({
     '@/assets/markdown.scss'
   ],
   extensions: ['.md'],
-  modules: ['./modules/markdown', '@unocss/nuxt']
+  modules: ['./modules/markdown', '@unocss/nuxt'],
+  vite: {
+    optimizeDeps: {
+      esbuildOptions: {
+        define: {
+          global: 'globalThis'  // fix nuxt3 global
+        },
+        plugins: [
+          NodeGlobalsPolyfillPlugin({
+            process: true,  // fix nuxt3 process
+            buffer: true
+          }),
+        ]
+      }
+    },
+  }
 })
