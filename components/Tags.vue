@@ -18,12 +18,13 @@ defineProps({
 <style lang="scss" scoped>
 .tags {
   .tag {
-    color: #fff;
+    color: var(--q-contrary);
     background-color: var(--q);
     width: fit-content;
     padding: 2px 15px;
     border-radius: 4px;
     text-align: center;
+    cursor: pointer;
   }
 }
 </style>

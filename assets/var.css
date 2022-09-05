@@ -12,12 +12,14 @@ html.dark .youus {
   --q: #bbb;
   --q-deep: #ddd;
   --q-deeper: #fff;
+  --q-contrary: #222
 }
 
 .youus {
   --q: #555;
   --q-deep: #222;
   --q-deeper: #000;
+  --q-contrary: #ddd;
 
   color: var(--q);
 }
