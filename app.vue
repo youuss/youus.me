@@ -1,9 +1,13 @@
 <template>
   <div>
-    <Title>hiYouus</Title>
     <NavBar />
     <NuxtPage />
     <Plum />
-    <Security/>
+    <Security />
   </div>
 </template>
+<script setup>
+useHead({
+  title: "hiYouus",
+});
+</script>

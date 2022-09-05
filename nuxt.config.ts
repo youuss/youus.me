@@ -33,5 +33,14 @@ export default defineNuxtConfig({
         ]
       }
     },
+    server: {
+      proxy: {
+        '/yq': {
+          target: 'https://www.yuque.com/api/v2',  //这里是接口地址
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/yq/, '')
+        },
+      },
+    }
   }
 })

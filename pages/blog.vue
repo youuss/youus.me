@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div @click="test">test</div>
-  </div>
+  <main class="youus m-auto">
+    <Tags :tags="tags" />
+  </main>
 </template>
 
 <script setup>
@@ -14,10 +14,13 @@
  * Hello, humor
  */
 
-import useYuQueMeta from '@/composables/useYuQueMeta';
-const { test } = useYuQueMeta();
+import useYuQueMeta from "@/composables/useYuQueMeta";
+
+const { tags, getAllTags } = useYuQueMeta();
+
+onMounted(() => {
+  getAllTags();
+});
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
