@@ -1,6 +1,6 @@
 <template>
   <main class="youus m-auto">
-    <Tags :tags="tags" />
+    <Tags :tags="headerTags" />
   </main>
 </template>
 
@@ -15,12 +15,15 @@
  */
 
 import useYuQueMeta from "@/composables/useYuQueMeta";
+import useTag from "@/composables/useTag";
 
 const { tags, getAllTags } = useYuQueMeta();
 
 onMounted(() => {
   getAllTags();
 });
+
+const { headerTags } = useTag(tags);
 </script>
 
 <style scoped></style>

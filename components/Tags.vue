@@ -17,6 +17,7 @@ defineProps({
 </script>
 <style lang="scss" scoped>
 .tags {
+  display: inline-flex;
   .tag {
     color: var(--q-contrary);
     background-color: var(--q);
@@ -25,6 +26,8 @@ defineProps({
     border-radius: 4px;
     text-align: center;
     cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
   }
 }
 </style>

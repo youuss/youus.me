@@ -15,12 +15,7 @@ export default function useYuQueMeta() {
   const tags = ref<IToc[]>([]);
   const getAllTags = async () => {
     const { data } = await getTocList();
-
-    data.value?.data.forEach(toc => {
-      if (toc.level === 0) {
-        tags.value.push(toc);
-      }
-    });
+    tags.value = data.value?.data || []
   }
 
   return {
