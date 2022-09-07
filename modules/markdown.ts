@@ -1,14 +1,11 @@
 import { addVitePlugin } from '@nuxt/kit';
 import Doc from 'vite-plugin-md';
-import Vue from '@vitejs/plugin-vue';
 import Shiki from 'markdown-it-shiki';
 
 export default async () => {
-  addVitePlugin(Vue({
-    include: [/\.md/],
-    exclude: [/\.vue$/]
-  }));
   addVitePlugin(Doc({
+    // wrapperComponent: 'Post',
+    wrapperClasses: "youus m-auto mb-8",
     headEnabled: true,
     markdownItOptions: {
       quotes: '""\'\'',

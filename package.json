@@ -7,16 +7,16 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@unocss/nuxt": "^0.45.13",
+    "@unocss/nuxt": "^0.45.18",
     "dayjs": "^1.11.5",
     "markdown-it-shiki": "^0.5.1",
-    "nuxt": "3.0.0-rc.8",
-    "sass": "^1.54.5",
-    "vite-plugin-md": "^0.20.2"
+    "nuxt": "3.0.0-rc.9",
+    "sass": "^1.54.8",
+    "vite-plugin-md": "^0.20.4"
   },
   "dependencies": {
     "@esbuild-plugins/node-globals-polyfill": "^0.1.1",
-    "@vueuse/core": "^9.1.0",
+    "@vueuse/core": "^9.2.0",
     "gray-matter": "^4.0.3"
   }
 }

@@ -3,10 +3,9 @@ import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfil
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  autoImports: {
+  imports: {
     dirs: [
-      'composables/**',
-      'utils/**'
+      'utils'
     ]
   },
   css: [
@@ -17,9 +16,12 @@ export default defineNuxtConfig({
     '@/assets/youus.scss',
     '@/assets/markdown.scss'
   ],
-  extensions: ['.md'],
+  extensions: ['.vue','.md'],
   modules: ['./modules/markdown', '@unocss/nuxt'],
   vite: {
+    vue: {
+      include: [/\.vue$/, /\.md$/],
+    },
     optimizeDeps: {
       esbuildOptions: {
         define: {

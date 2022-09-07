@@ -14,9 +14,6 @@
  * Hello, humor
  */
 
-import useYuQueMeta from "@/composables/useYuQueMeta";
-import useTag from "@/composables/useTag";
-
 const { tags, getAllTags } = useYuQueMeta();
 
 onMounted(() => {
