@@ -8,6 +8,10 @@ export default defineNuxtConfig({
       'utils'
     ]
   },
+  components: {
+    global: true,
+    dirs: ['@/components'],
+  },
   css: [
     '@/assets/var.css',
     '@/assets/common.scss',
