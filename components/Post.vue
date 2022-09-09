@@ -11,7 +11,7 @@ defineProps({
 
 <template>
   <div>
-    <div v-if="frontmatter.display ?? frontmatter.title" class="prose m-auto mb-8">
+    <div v-if="frontmatter.display ?? frontmatter.title" class="youus m-auto mb-8">
       <h1 class="mb-0">
         {{ frontmatter.display ?? frontmatter.title }}
       </h1>

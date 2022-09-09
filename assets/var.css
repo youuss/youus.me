@@ -5,17 +5,6 @@
   --q-scrollbar: #eee;
   --q-scrollbar-hover: #bbb;
   --q-font-family: youus, "Gill Sans", sans-serif;
-}
-
-
-html.dark .youus {
-  --q: #bbb;
-  --q-deep: #ddd;
-  --q-deeper: #fff;
-  --q-contrary: #222
-}
-
-.youus {
   --q: #555;
   --q-deep: #222;
   --q-deeper: #000;
@@ -28,4 +17,8 @@ html.dark {
   --q-bg: #050505;
   --q-scrollbar: #111;
   --q-scrollbar-hover: #222;
+  --q: #bbb;
+  --q-deep: #ddd;
+  --q-deeper: #fff;
+  --q-contrary: #222;
 }

@@ -1,5 +1,6 @@
 <template>
-  <main class="youus m-auto">
+  <main>
+    <PageTitle title="Blog" />
     <Tags :tags="headerTags" />
   </main>
 </template>

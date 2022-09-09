@@ -30,14 +30,14 @@ html:not(.dark) .shiki-dark {
   display: none;
 }
 
-.youus a {
+.youus a:not([title=hiyouus]) {
   font-weight: inherit;
   text-decoration: none;
   border-bottom: 1px solid rgba(125, 125, 125, 0.3);
   transition: border 0.3s ease-in-out;
 }
 
-.youus a:hover {
+.youus a:not([title=hiyouus]):hover {
   border-bottom: 1px solid var(--q);
 }
 

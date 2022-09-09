@@ -1,6 +1,7 @@
 ---
 title: Projects
 zh: 我的项目
+subtitle: 我正在做的那点事...
 projects:
   Lasting:
     icon: 'Youus'
@@ -23,14 +24,4 @@ projects:
         icon: 'Janghood'
 ---
 
-# {{title}}
-
-我正在做的一点事...
-
-
-
 <ListProjects :projects="projects" />
-
-<script setup>
-import ListProjects from '@/components/ListProjects'
-</script>

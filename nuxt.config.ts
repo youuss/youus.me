@@ -9,8 +9,9 @@ export default defineNuxtConfig({
     ]
   },
   components: {
+    // 解决vite-plugin-md wrapperComponent 获取 nuxt 组件未注册
     global: true,
-    dirs: ['@/components'],
+    dirs: ['~/components'],
   },
   css: [
     '@/assets/var.css',
