@@ -9,6 +9,7 @@
   --q-deep: #222;
   --q-deeper: #000;
   --q-contrary: #ddd;
+  --tag-border-color: #10b981;
 
   color: var(--q);
 }

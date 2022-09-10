@@ -14,6 +14,7 @@ interface IToc {
   visible: number;
   depth: number;
   slug: string;
+  children?: IToc[]
 }
 
 

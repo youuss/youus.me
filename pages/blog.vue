@@ -1,7 +1,7 @@
 <template>
   <main>
     <PageTitle title="Blog" />
-    <Tags :tags="headerTags" />
+    <TocTag v-for="tag in headerTags" :tag="tag" />
   </main>
 </template>
 
@@ -14,14 +14,16 @@
  *
  * Hello, humor
  */
-
 const { tags, getAllTags } = useYuQueMeta();
 
-onMounted(() => {
-  getAllTags();
-});
+const { headerTags, createTagTree } = useTag(tags);
 
-const { headerTags } = useTag(tags);
+onMounted(async () => {
+  await getAllTags();
+  console.log(tags);
+  const tagTree = createTagTree();
+  console.log(tagTree);
+});
 </script>
 
 <style scoped></style>
