@@ -16,8 +16,10 @@ export default function useTag(tags: Ref<IToc[]>) {
     return loop(uuid)
   }
 
+  const tocTree = computed<IToc[]>(() => createTagTree())
+
   return {
     headerTags,
-    createTagTree
+    tocTree,
   }
 }
