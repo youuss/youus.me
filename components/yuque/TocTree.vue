@@ -53,11 +53,11 @@ const onOff = (uuid: string) => {
   --level: 0;
   display: flex;
   flex-wrap: nowrap;
+  cursor: pointer;
   padding: 4px 0 4px calc(24px * var(--level) + 8px);
 
   .tree-icon {
     position: relative;
-    cursor: pointer;
     display: inline-flex;
     flex: none;
     width: 16px;

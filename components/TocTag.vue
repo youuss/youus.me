@@ -1,17 +1,23 @@
 <template>
-  <div class="tag">
+  <div class="tag" @click="tagClickHandler">
     {{ tag.title }}
   </div>
 </template>
 <script setup lang="ts">
 import { PropType } from "vue";
 
-defineProps({
+const props = defineProps({
   tag: {
     type: Object as PropType<IToc>,
     default: () => ({}),
   },
 });
+
+const emit = defineEmits(["click"]);
+
+const tagClickHandler = () => {
+  emit("click", props.tag);
+};
 </script>
 <style lang="scss" scoped>
 .tag {
