@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     '@/assets/markdown.scss'
   ],
   extensions: ['.vue','.md'],
-  modules: ['./modules/markdown', '@unocss/nuxt'],
+  modules: ['./modules/markdown', '@unocss/nuxt', '@pinia/nuxt'],
   vite: {
     vue: {
       include: [/\.vue$/, /\.md$/],

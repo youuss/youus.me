@@ -7,10 +7,12 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@pinia/nuxt": "^0.4.2",
     "@unocss/nuxt": "^0.45.18",
     "dayjs": "^1.11.5",
     "markdown-it-shiki": "^0.5.1",
     "nuxt": "3.0.0-rc.9",
+    "pinia": "^2.0.22",
     "sass": "^1.54.8",
     "vite-plugin-md": "^0.20.4"
   },
